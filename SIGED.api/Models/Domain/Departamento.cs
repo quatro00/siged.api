@@ -19,7 +19,7 @@ public partial class Departamento
 
     public DateTime FechaCreacion { get; set; }
 
-    public DateTime? FechaModificacion { get; set; }
+    public DateTime? FechaActualizacion { get; set; }
 
     public virtual Area Area { get; set; } = null!;
 }

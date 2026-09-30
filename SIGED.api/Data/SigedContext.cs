@@ -155,7 +155,7 @@ public partial class SigedContext : DbContext
             entity.Property(e => e.Descripcion)
                 .HasMaxLength(500)
                 .IsUnicode(false);
-            entity.Property(e => e.FechaCreacion).HasDefaultValueSql("(sysdatetime())");
+            entity.Property(e => e.FechaCreacion).HasDefaultValueSql("(sysutcdatetime())");
             entity.Property(e => e.Nombre)
                 .HasMaxLength(150)
                 .IsUnicode(false);
