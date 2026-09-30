@@ -31,16 +31,6 @@ public partial class Usuario
 
     public bool? Activo { get; set; }
 
-    public bool PuedeEnviarMasivo { get; set; }
-
-    public int MaxEnviosPorDia { get; set; }
-
-    public int MaxEnviosPorHora { get; set; }
-
-    public int MaxDestinatariosPorEnvio { get; set; }
-
-    public bool RequiereAprobacionMasiva { get; set; }
-
     public DateTime? FechaUltimoAcceso { get; set; }
 
     public DateTime FechaCreacion { get; set; }

@@ -129,9 +129,6 @@ public partial class SigedContext : DbContext
             entity.Property(e => e.EsAdministrador)
                 .IsRequired()
                 .HasDefaultValueSql("((1))");
-            entity.Property(e => e.MaxDestinatariosPorEnvio).HasDefaultValueSql("((50))");
-            entity.Property(e => e.MaxEnviosPorDia).HasDefaultValueSql("((200))");
-            entity.Property(e => e.MaxEnviosPorHora).HasDefaultValueSql("((50))");
             entity.Property(e => e.Nombre).HasMaxLength(200);
             entity.Property(e => e.Pais).HasMaxLength(100);
             entity.Property(e => e.Telefono).HasMaxLength(50);
