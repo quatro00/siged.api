@@ -3,9 +3,11 @@ using System.Collections.Generic;
 
 namespace SIGED.api.Models.Domain;
 
-public partial class Area
+public partial class Departamento
 {
     public Guid Id { get; set; }
+
+    public Guid AreaId { get; set; }
 
     public string Clave { get; set; } = null!;
 
@@ -17,7 +19,7 @@ public partial class Area
 
     public DateTime FechaCreacion { get; set; }
 
-    public DateTime? FechaActualizacion { get; set; }
+    public DateTime? FechaModificacion { get; set; }
 
-    public virtual ICollection<Departamento> Departamentos { get; set; } = new List<Departamento>();
+    public virtual Area Area { get; set; } = null!;
 }
