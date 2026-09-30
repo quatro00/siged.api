@@ -6,6 +6,8 @@ using Microsoft.OpenApi.Models;
 using SIGED.api.Data;
 using SIGED.api.Repositories.Implementation;
 using SIGED.api.Repositories.Interface;
+using SIGED.api.Services.Administrador.Implementation;
+using SIGED.api.Services.Administrador.Interface;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -61,6 +63,7 @@ builder.Services.AddDbContext<AuthDbContext>(options =>
 
 //administrador
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
+builder.Services.AddScoped<IUsuarioAdministradorService, UsuarioAdministradorService>();
 
 builder.Services.AddIdentityCore<IdentityUser>()
     .AddRoles<ApplicationRole>()
