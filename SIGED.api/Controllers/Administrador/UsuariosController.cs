@@ -7,7 +7,7 @@ namespace SIGED.api.Controllers.Administrador
 {
     [ApiController]
     [Route("api/administrador/usuarios")]
-    [Authorize(Roles = "ADMINISTRADOR")]
+    [Authorize(Roles = "Administrador")]
     public class UsuariosController : ControllerBase
     {
         private readonly IUsuarioAdministradorService service;
