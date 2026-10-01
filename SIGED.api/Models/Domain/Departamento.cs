@@ -21,5 +21,9 @@ public partial class Departamento
 
     public DateTime? FechaActualizacion { get; set; }
 
+    public Guid? UsuarioCreacionId { get; set; }
+
+    public Guid? UsuarioActualizacionId { get; set; }
+
     public virtual Area Area { get; set; } = null!;
 }
